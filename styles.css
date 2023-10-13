@@ -1,0 +1,99 @@
+/* Buttons */
+
+body{
+    /* background-image: url("https://mcosmeticsurgery.com/wp-content/uploads/2022/06/what-is-the-golden-ratio-of-facial-aesthetics.jpeg") */
+    background-color: #212529;
+    min-height: 100vh;
+}
+
+#addRow {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+#addRow.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+[data-col="add-child"],
+[data-col="remove-child"] {
+    cursor: pointer;
+}
+
+[data-col="exercise"].disable {
+    pointer-events: none;
+    border: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+/* Table */
+tfoot tr td {
+    box-shadow: none;
+    border-color: transparent
+}
+/* Table */
+
+/* ... Existing styles ... */
+/* 
+.table th {
+    text-align: center;
+}
+
+.table th:first-child {
+    width: 30%;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+.table tfoot {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.time-tick {
+    cursor: pointer;
+    width: 20px;
+
+}
+
+.exercise-cell {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.mild-color {
+    background-color: #c2e0c6;
+}
+
+.strong-color {
+    background-color: #fddbab;
+}
+
+.red-color {
+    background-color: #f99a9a;
+}
+
+
+
+
+  
+  .image-container {
+    max-width: 400px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+  }
+   */
+  
