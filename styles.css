@@ -1,99 +1,84 @@
-/* Buttons */
-
-body{
-    /* background-image: url("https://mcosmeticsurgery.com/wp-content/uploads/2022/06/what-is-the-golden-ratio-of-facial-aesthetics.jpeg") */
-    background-color: #212529;
-    min-height: 100vh;
-}
-
-#addRow {
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-#addRow.disabled {
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-[data-col="add-child"],
-[data-col="remove-child"] {
-    cursor: pointer;
-}
-
-[data-col="exercise"].disable {
-    pointer-events: none;
-    border: none;
-    color: transparent;
-    background-color: transparent;
-}
-
-/* Table */
-tfoot tr td {
-    box-shadow: none;
-    border-color: transparent
-}
-/* Table */
-
-/* ... Existing styles ... */
-/* 
-.table th {
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    position: relative;
 }
 
-.table th:first-child {
-    width: 30%;
+#activity-table-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    overflow-y: auto;
 }
 
-.table th,
-.table td {
-    border: 1px solid #ccc;
-    padding: 5px;
-    text-align: center;
+#activity-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin: 0;
+    padding: 0;
 }
 
-.table tfoot {
-    background-color: #f2f2f2;
-    font-weight: bold;
+#activity-table thead {
+    background-color: #0056b3;
+    color: white;
 }
 
-.time-tick {
-    cursor: pointer;
-    width: 20px;
-
-}
-
-.exercise-cell {
+#activity-table th, #activity-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
     text-align: left;
-    padding-left: 10px;
 }
 
-.mild-color {
-    background-color: #c2e0c6;
+#activity-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
 }
 
-.strong-color {
-    background-color: #fddbab;
+#activity-table tbody tr:hover {
+    background-color: #ddd;
 }
 
-.red-color {
-    background-color: #f99a9a;
+#draw-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+#draw-button {
+    cursor: pointer;
+    padding: 30px 60px; /* Increased padding for a larger button */
+    font-size: 26px; /* Larger font size for the button text */
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners for the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 2;
+}
 
+#draw-button:hover {
+    background-color: #003d82;
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
 
-
-  
-  .image-container {
-    max-width: 400px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  #image {
+#activity-display {
+    margin-top: 20px; /* Add space between the button and the display text */
+    font-size: 24px;
+    color: #333;
+    min-height: 50px;
     width: 100%;
-    height: auto;
-    transition: transform 0.5s;
-  }
-   */
-  
+    position: absolute;
+    top: 120%; /* Position below the button */
+    left: 50%;
+    transform: translate
